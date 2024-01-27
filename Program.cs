@@ -17,6 +17,7 @@ namespace ExercicioForeach
         {
             string[] nomes = new string[10];
             int[] idades = new int[10];
+
             for (int i = 0; i < 10; i++)
             {
 
@@ -26,9 +27,18 @@ namespace ExercicioForeach
 
                 Console.WriteLine("Digite a idade do aluno {0}: ", i + 1);
                 idades[i] = int.Parse(Console.ReadLine());
-                
 
             }
+
+            Console.WriteLine("Lista de alunos:");
+
+            for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine("Nome: {0}, Idade: {1}", nomes[i], idades[i]);
+                }
+
+                Console.ReadLine();
+            
         }
     }
 }
